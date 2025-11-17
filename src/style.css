@@ -1,5 +1,84 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #2e7d32;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  
+}
+header{
+  height: 75px;
+  width: 100%;
+  margin-bottom: 20px;  
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  background-color: #388e3c;
+  text-align: center;
+  color: white; 
+  background: grey;
 
-body{
-    background: white;
+}
+button {
+  color: green;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  width: 120px;
+  height: 55px;
+}
+.card {
+  width: 120px;
+  height: 160px;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 18px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 18px;
+  transform: rotate(180deg);
+}
+
+.center {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  font-size: 50px;
+  text-align: center;
+}
+
+.card.hearts .top-left,
+.card.hearts .bottom-right,
+.card.hearts .center,
+.card.diamonds .top-left,
+.card.diamonds .bottom-right,
+.card.diamonds .center {
+  color: red;
+}
+
+.card.spades .top-left,
+.card.spades .bottom-right,
+.card.spades .center,
+.card.clubs .top-left,
+.card.clubs .bottom-right,
+.card.clubs .center {
+  color: black;
 }
